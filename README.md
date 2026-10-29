@@ -4,33 +4,6 @@ Python tools for the **cbxy** comic panel sidecar format.
 
 [Try the demo](https://ngafar.github.io/cbxy/demo/). The format specification is in [ngafar/cbxy](https://github.com/ngafar/cbxy/blob/main/spec/v0.1.0.md).
 
-## A Brief Introduction
-
-A `.cbxy` file is a ZIP archive of JSON files (same idea as CBZ, but metadata instead of images).
-
-```text
-book.cbz                         book.cbxy
-├── page-001.jpg                 ├── page-001.json
-├── page-002.jpg                 ├── page-002.json
-└── Art/page-003.png             └── Art/page-003.json
-```
-
-Coordinates are normalized fractions of the page (`0–1`), so they survive resize. Array order is reading order.
-
-```json
-{
-  "page": "page-001.jpg",
-  "width": 1680,
-  "height": 2583,
-  "panels": [
-    { "x": 0.035, "y": 0.058, "w": 0.388, "h": 0.286 },
-    { "x": 0.437, "y": 0.058, "w": 0.526, "h": 0.287 }
-  ]
-}
-```
-
-For a full specification, see the latest version of the [spec](https://github.com/ngafar/cbxy/blob/main/spec/v0.1.0.md).
-
 ## About This Repository
 
 This repository is the Python reference implementation: panel detection, a browser reader, and a visual editor. The format itself is specified in [ngafar/cbxy](https://github.com/ngafar/cbxy).
