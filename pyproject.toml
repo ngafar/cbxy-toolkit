@@ -1,6 +1,6 @@
 [project]
 name = "cbxy"
-version = "0.1.2"
+version = "0.1.3"
 description = "Tools for the cbxy comic panel sidecar format (detect, reader, editor)"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -8,7 +8,7 @@ license = "MIT"
 authors = [{ name = "Nawaz Gafar" }]
 keywords = ["comics", "cbz", "cbr", "panels", "cbxy", "guided-view"]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Environment :: Console",
     "Environment :: Web Environment",
     "Intended Audience :: End Users/Desktop",
